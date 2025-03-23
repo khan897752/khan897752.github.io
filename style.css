@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+nav {
+    background-color: #2196F3;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    float: left;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav .nav-links {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .nav-links a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #87CEEB;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #1976D2;
+}
+
+#projects {
+    background-color: white;
+}
+
+#projects h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#contact {
+    background-color: #87CEEB;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links .btn {
+    margin: 10px;
+}
+
+footer {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .logo {
+        float: none;
+        text-align: center;
+    }
+
+    nav .nav-links {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}
